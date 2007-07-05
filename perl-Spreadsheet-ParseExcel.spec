@@ -14,6 +14,7 @@ Source:		ftp://ftp.perl.org/pub/CPAN/modules/by-module/Spreadsheet/%{module}-%{r
 Url:		http://search.cpan.org/dist/%{module}
 BuildRequires:	perl-devel
 BuildRequires: perl-OLE-Storage_Lite
+BuildRequires: perl(IO::Scalar)
 Buildarch:	noarch
 Buildroot:	%{_tmppath}/%{name}-%{version}
 
