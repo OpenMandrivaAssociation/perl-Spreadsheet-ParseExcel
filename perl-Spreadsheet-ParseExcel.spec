@@ -16,7 +16,6 @@ BuildRequires:	perl-devel
 BuildRequires: perl-OLE-Storage_Lite
 BuildRequires: perl(IO::Scalar)
 Buildarch:	noarch
-Buildroot:	%{_tmppath}/%{name}-%{version}
 
 %description
 Spreadsheet::ParseExcel makes you to get information
