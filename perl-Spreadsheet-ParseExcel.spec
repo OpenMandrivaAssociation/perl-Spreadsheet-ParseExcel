@@ -1,8 +1,8 @@
 %define module		Spreadsheet-ParseExcel
 %define name		perl-%{module}
 %define realver     0.32
-%define version		%{realver}00
-%define release		%mkrel 3
+%define version		0.3300
+%define release		%mkrel 1
 
 Name:		%{name}
 Version:	%{version}
