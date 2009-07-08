@@ -1,29 +1,28 @@
-%define module		Spreadsheet-ParseExcel
-%define name		perl-%{module}
-%define realver     0.32
-%define version		0.4900
-%define release		%mkrel 1
+%define upstream_name		Spreadsheet-ParseExcel
+%define upstream_version    0.49
 
-Name:		%{name}
-Version:	%{version}
-Release:	%{release}
+Name:		perl-%{upstream_name}
+Version:	%perl_convert_version %{upstream_version}
+Release:	%mkrel 1
+Epoch:      1
+
 Summary:	Spreadsheet::ParseExcel - Get information from Excel file
 License:	GPL
 Group:		Office
-Source:		ftp://ftp.perl.org/pub/CPAN/modules/by-module/Spreadsheet/%{module}-%{realver}.tar.gz
-Url:		http://search.cpan.org/dist/%{module}
-BuildRequires:	perl-devel
-BuildRequires: perl-OLE-Storage_Lite
+Url:		http://search.cpan.org/dist/%{upstream_name}
+Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/Spreadsheet/%{upstream_name}-%{upstream_version}.tar.gz
+
 BuildRequires: perl(IO::Scalar)
+BuildRequires: perl(OLE::Storage_Lite)
 Buildarch:	noarch
-Buildroot:	%{_tmppath}/%{name}-%{version}
+Buildroot:	%{_tmppath}/%{name}-%{version}-%{release}
 
 %description
 Spreadsheet::ParseExcel makes you to get information
 from Excel95, Excel97, Excel2000 file.
 
 %prep
-%setup -q -n %{module}-%{realver}
+%setup -q -n %{upstream_name}-%{upstream_version}
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
