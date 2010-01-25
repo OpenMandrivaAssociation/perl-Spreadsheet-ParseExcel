@@ -1,5 +1,5 @@
 %define upstream_name		Spreadsheet-ParseExcel
-%define upstream_version 0.56
+%define upstream_version 0.57
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
