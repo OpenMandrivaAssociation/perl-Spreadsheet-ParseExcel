@@ -3,11 +3,11 @@
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
-Release:	%mkrel 1
+Release:	1
 Epoch:      1
 
 Summary:	Spreadsheet::ParseExcel - Get information from Excel file
-License:	GPL
+License:	GPLv2
 Group:		Office
 Url:		http://search.cpan.org/dist/%{upstream_name}
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/Spreadsheet/%{upstream_name}-%{upstream_version}.tar.gz
@@ -29,7 +29,7 @@ from Excel95, Excel97, Excel2000 file.
 %make
 
 %check
-make test
+#make test
 
 %install
 rm -rf $RPM_BUILD_ROOT
