@@ -8,7 +8,7 @@ Version:	%perl_convert_version %{modver}
 Release:	15
 License:	GPLv2
 Group:		Office
-Url:		http://search.cpan.org/dist/%{modname}
+Url:		https://search.cpan.org/dist/%{modname}
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/Spreadsheet/%{modname}-%{modver}.tar.gz
 BuildArch:	noarch
 BuildRequires:	perl(Test::More)
