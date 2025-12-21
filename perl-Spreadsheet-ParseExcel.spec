@@ -11,6 +11,7 @@ Group:		Office
 Url:		https://search.cpan.org/dist/%{modname}
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/Spreadsheet/%{modname}-%{modver}.tar.gz
 BuildArch:	noarch
+BuildRequires:	make
 BuildRequires:	perl(Test::More)
 BuildRequires:	perl(IO::Scalar)
 BuildRequires:	perl(OLE::Storage_Lite)
